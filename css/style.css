@@ -4,3 +4,62 @@
     box-sizing: border-box;
 }
 
+img{
+    width: 100%;
+    display: inline-block;
+}
+
+header{
+    background-color: #ff6900;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.col{
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+ul{
+    display: flex;
+    width: 30%;    
+}
+
+li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.logo img{    
+   width: 20%;
+   display: flex;
+}
+
+.account { 
+    display: flex;
+    color: white;
+}
+
+.account i{
+    padding: 5px;
+}
+/* FINE HEADER */
+
+
+
+.container{
+    background-color: lightgray;
+    width: 70%;
+}
+
