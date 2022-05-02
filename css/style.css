@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
 img{
     width: 100%;
     display: inline-block;
@@ -57,21 +61,20 @@ a{
 /* FINE HEADER */
 
 
-
+/* INIZIO MAIN */
 .container{
     width: 70%;
     display: flex;
     margin: 80px auto;
     flex-wrap: wrap;
-    background-color: aqua;
 }
 
 .product{
     width: calc(100% / 3);
     padding: 0 10px;
-    border: 1px solid black;
+    
 }
-
+/* inizio alternaza foto */
 .photo{
     position: relative;
     top:0;
@@ -79,20 +82,59 @@ a{
 }
 
 .front{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    
-    
+    display: block;    
 }
 
-.photo:hover .back{
-    position: absolute;
-    top: 0;
-    bottom: 0;
+.back{
     display: none;
 }
 
-.description{
+.photo:hover .back{
+    display: block;   
+}
 
+.photo:hover .front{
+    display: none;
+}
+            /* CUORE */
+.heart{
+    background-color: white;
+    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.sales{
+    color: white;
+    position: absolute;
+    bottom: 50px;   
+}
+
+.box-red{
+    background-color: red;
+    padding: 5px;
+}
+
+.box-green{
+    background-color: green;
+    padding: 5px;
+}
+
+
+.description{
+    display: block;
+    margin-bottom: 40px;
+}
+/* fine alternaza foto */
+/* descrizione */
+.discount-price{
+    color: red;
+}
+.original-price{
+    text-decoration: line-through;
 }
